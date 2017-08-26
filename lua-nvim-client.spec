@@ -5,7 +5,7 @@
 %global luapkgdir %{_datadir}/lua/%{luaver}
 
 %define vermagic1 0.0.1
-%define vermagic2 24
+%define vermagic2 26
 
 Name:           lua-nvim-client
 Version:        %{vermagic1}_%{vermagic2}
@@ -59,5 +59,8 @@ install -p -m644 nvim/*.lua %{buildroot}%{luapkgdir}/nvim/
 
 
 %changelog
+* Sun Aug 27 2017 Jajauma's Packages <jajauma@yandex.ru> - 0.0.1_26-1
+- Update to latest upstream release
+
 * Sat Jun 04 2016 Jajauma's Packages <jajauma@yandex.ru> - 0.0.1_24-1
 - Public release
